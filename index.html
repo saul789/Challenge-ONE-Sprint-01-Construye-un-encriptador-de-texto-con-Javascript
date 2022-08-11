@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge ONE Sprint 01 Construye un encriptador de texto con Javascript</title>
+    <script src="./functions.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./img/Vector.svg">
+    </header>
+    <textarea class="input-texto texto" id="input-entrada" placeholder="Ingrese el texto aquí" cols="30" rows="10"></textarea>
+
+    <div class="frame3">
+        <div class="frame1"> 
+            <img class="frame1-simbol" src="./img/bi_exclamation-circle-fill.svg">
+            <p class="frame1-texto texto">Solo letras minúsculas y sin acentos</p>
+        </div>
+        
+        <button class="btn-encriptar buttons texto" onclick="encriptador()">Encriptar</button>
+        <button class="btn-desencriptar buttons texto" onclick="desencriptador()">Desencriptar</button>
+        
+        
+    </div>
+    <div class="resultado" id="mensajeRemover">
+        
+            <img class="muñeco" src="/img/Muñeco.svg">
+        
+        <div>
+            <label class="mensajeNoEncontrado">Ningún mensaje fue encontrado</label>
+        </div>
+        <div>
+            <label class="textEncriptar">Ingresa el texto que desees encriptar o desencriptar.</label>
+        </div>  
+    </div>
+    <footer></footer>
+</body>
+</html>
