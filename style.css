@@ -113,8 +113,8 @@ header {
   border: 1px solid #0a3871;
   border-radius: 24px;
   position: absolute;
-  bottom: 1px;
-  left: 25%;
+  bottom: 5px;
+  left: 23%;
 }
 .txt-resultado {
   width: 279px;
@@ -141,6 +141,21 @@ header {
   width: 0px;
   height: 0px;
 }
+footer {
+  position: absolute;
+  width: 100%;
+  height:50px;
+  bottom: -400px;
+  
+}
+.footer-texto{
+  position:absolute;
+  color: #0a3871;
+  font-size: 15px;
+  margin-left: 15%;
+  
+ 
+}
 /*desktop*/
 @media only screen and (min-width: 1281px) {
 
@@ -151,11 +166,11 @@ header {
   .input-texto{
     left: 240px;
     width: 800px;
-    height: 600px;
+    height: 580px;
     font-size: 42px;
   }
   .frame3{
-    top: 800px;
+    top: 750px;
     flex-direction: row;
     left: 240px;
   }
@@ -177,7 +192,7 @@ header {
   }
   .resultado{
     width: 400px;
-    height: 830px;
+    height: 760px;
     top: 40px;
     right: 100px;
     left:auto;
@@ -195,12 +210,20 @@ header {
   }
   .btn-copiar{
     bottom: 10px;
+    left: 25%;
   }
   .frame1-texto{
     font-size: 25px;
   }
+  footer{
+    bottom: 100px;
+    }
+    .footer-texto{
+      margin-left: 40%;
+      font-size: 22px;
+    }
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) and (max-width:1280px){
   .frame1-texto {
     font-size: 22px;
   }
@@ -214,8 +237,19 @@ header {
     top: 50px;
    
   }
+  .btn-copiar{
+    left: 40%;
+  }
   .btn-desencriptar{
     left: 400px;
 
+  }
+  footer{
+    bottom: -230px;
+    
+  }
+  .footer-texto{
+    font-size: 22px;
+    margin-left: 30%;
   }
 }
